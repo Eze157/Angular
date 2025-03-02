@@ -31,4 +31,4 @@ export class Hero extends Person{
 
 const eze = new Hero(30, 'Castillo');
 
-console.log(eze);
+console.log(eze);console.log('Creating a new Hero...'); 

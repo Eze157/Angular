@@ -20,15 +20,27 @@ export class Person{
 
 }
 
-export class Hero extends Person{
+// export class Hero extends Person{
+//     constructor (
+//         public age: number,
+//         public lastname: string,
+//     ){
+//         super( 'Ezequiel', 'San Juan' );
+//     }
+// }
+
+export class Hero{
     constructor (
         public age: number,
         public lastname: string,
+        public person: Person,
     ){
-        super( 'Ezequiel', 'San Juan' );
+        
     }
 }
 
-const eze = new Hero(30, 'Castillo');
+const person = new Person('Ezequiel', 'San Juan');
 
-console.log(eze);console.log('Creating a new Hero...'); 
+const eze = new Hero(30, 'Castillo', person);
+
+console.log(eze); 
